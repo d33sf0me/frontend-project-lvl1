@@ -3,8 +3,6 @@ name: make lint
 on:
   - push
 
-env:
-  CI: true
 
 jobs:
   build:
