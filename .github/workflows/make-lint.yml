@@ -24,4 +24,4 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: true
-        run: make lint
+      - run: make lint
