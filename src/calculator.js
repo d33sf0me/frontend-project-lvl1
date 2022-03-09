@@ -3,13 +3,13 @@ import readlineSync from 'readline-sync';
 import { name } from '../src/cli.js';
 // eslint-disable-next-line linebreak-style
 
-function whatSign(sign) {
+/*function whatSign(sign) {
     let signs=['+','-','*'];
     let i=Math.floor(Math.random()*sign.length);
     return signs[i];
 }
 
-/*console.log('What is the result of the expression?');
+console.log('What is the result of the expression?');
 let counter = 0;
 while (counter < 3) {
   const number1 = Math.floor(Math.random() * 101); // returns a random integer from 0 to 100
