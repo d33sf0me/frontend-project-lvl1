@@ -1,19 +1,21 @@
 /* eslint-disable linebreak-style */
 import readlineSync from 'readline-sync';
-import { name } from './cli.js';
+import { name } from '../src/cli.js';
 // eslint-disable-next-line linebreak-style
 
-export default function IsEven(number) {
-  if (number % 2 === 0) {
-    return true;
-  } return undefined;
+function whatSign(sign) {
+    let signs=['+','-','*'];
+    let i=Math.floor(Math.random()*sign.length);
+    return signs[i];
 }
 
-console.log('Answer "yes" if the number is even, otherwise answer "no".');
+/*console.log('What is the result of the expression?');
 let counter = 0;
 while (counter < 3) {
-  const number = Math.floor(Math.random() * 101); // returns a random integer from 0 to 100
-  console.log(`Question: ${number}`);
+  const number1 = Math.floor(Math.random() * 101); // returns a random integer from 0 to 100
+  const number2 = Math.floor(Math.random() * 101); // returns a random integer from 0 to 100
+  
+  console.log(`Question: ${number1} + ${number2}`);
   const answer = readlineSync.question('Your answer: ');
   if (IsEven(number) === true && answer === 'yes') {
     console.log('Correct!');
@@ -29,3 +31,4 @@ while (counter < 3) {
     break;
   }
 } if (counter === 3) { console.log(`Congratulations, ${name}!`); }
+*/
