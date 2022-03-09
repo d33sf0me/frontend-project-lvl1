@@ -1,9 +1,9 @@
 /* eslint-disable linebreak-style */
 import readlineSync from 'readline-sync';
-import { name } from '../src/cli.js';
+import { name } from './cli.js';
 // eslint-disable-next-line linebreak-style
 
-/*function whatSign(sign) {
+/* function whatSign(sign) {
     let signs=['+','-','*'];
     let i=Math.floor(Math.random()*sign.length);
     return signs[i];
@@ -14,7 +14,7 @@ let counter = 0;
 while (counter < 3) {
   const number1 = Math.floor(Math.random() * 101); // returns a random integer from 0 to 100
   const number2 = Math.floor(Math.random() * 101); // returns a random integer from 0 to 100
-  
+
   console.log(`Question: ${number1} + ${number2}`);
   const answer = readlineSync.question('Your answer: ');
   if (IsEven(number) === true && answer === 'yes') {
